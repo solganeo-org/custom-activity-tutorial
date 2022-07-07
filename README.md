@@ -24,6 +24,7 @@ Feel free to contact **solganeo technical** (it@solgnaneo.com) support if you ha
     - [Download postmonger, jquery and require libraries](#download-postmonger-jquery-and-require-libraries)
     - [customActivity.js](#customactivityjs)
     - [Modify ./server/index.js](#modify-serverindexjs)
+  - [Step 7: Run the application using ngrok](#step-7-run-the-application-using-ngrok)
 
 ## Requirements
 
@@ -353,3 +354,11 @@ app.listen(port, () => {
 ```
 
 Finally Execute the Applicatio  using the command: `npm run dev`
+
+## Step 7: Run the application using ngrok
+
+Once Installed Ngrok and with the step 6 finished, you can use ngrok to run the application.
+
+Firstly, run the app using `npm run dev` and after this `ngrok http 3000`. The second command will open a tunnel and will give you a public endpoint to connect Salesforce Marketing Cloud to your server.
+
+Copy the **https** endpoint for the next steps! 
