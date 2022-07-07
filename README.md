@@ -25,6 +25,7 @@ Feel free to contact **solganeo technical** (it@solgnaneo.com) support if you ha
     - [customActivity.js](#customactivityjs)
     - [Modify ./server/index.js](#modify-serverindexjs)
   - [Step 7: Run the application using ngrok](#step-7-run-the-application-using-ngrok)
+  - [Step 8: Create Package on Salesforce Marketing Cloud](#step-8-create-package-on-salesforce-marketing-cloud)
 
 ## Requirements
 
@@ -361,4 +362,11 @@ Once Installed Ngrok and with the step 6 finished, you can use ngrok to run the 
 
 Firstly, run the app using `npm run dev` and after this `ngrok http 3000`. The second command will open a tunnel and will give you a public endpoint to connect Salesforce Marketing Cloud to your server.
 
-Copy the **https** endpoint for the next steps! 
+Copy the **https** endpoint for the following steps! 
+
+## Step 8: Create Package on Salesforce Marketing Cloud
+
+This step is necessary to make the connection with Salesforce Marketing Cloud. Log in to your salesforce marketing cloud account, then go to setup, create a new package and add what you copied in the previous step as an endpoint. 
+
+Once this is done, you should be able to go to the journey builder and use the component! 🚀
+
