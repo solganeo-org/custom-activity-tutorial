@@ -12,6 +12,7 @@ This project will help you to create a Custom Acitivity by using Node JS as lang
     - [MAC](#mac)
   - [Step 2: Start Node Project and Install dependencies](#step-2-start-node-project-and-install-dependencies)
   - [Step 3: Create Folder Structure](#step-3-create-folder-structure)
+  - [Step 4: Start Node Js Server using Express](#step-4-start-node-js-server-using-express)
 
 ## Requirements
 
@@ -20,8 +21,8 @@ This project will help you to create a Custom Acitivity by using Node JS as lang
 3. PaaS as **Heroku**
 4. Express Module
 5. VSCode
+6. Ngrok
 
-<a name="install"/>
 ## Step 1: Install Node and NPM
 
 Install Node and Npm.
@@ -99,4 +100,24 @@ Finally modify the package.json file and add the following line inside the **scr
 
 ```
 
+## Step 4: Start Node Js Server using Express
 
+copy and paste the following code inside **./server.index.js**
+
+```js
+
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
+
+```
+
+Finally Open a terminal and exectue `npm run dev` This command will start the server. Finally go to http://localhost:3000 and see the Magic! 😎
