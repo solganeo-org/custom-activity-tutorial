@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Custom Journey Builder Activity</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/salesforce-lightning/assets/styles/salesforce-lightning-design-system.min.css"
+    />
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/require.js"></script>
+    <script type="text/javascript">
+      (function () {
+        var config = {
+          baseUrl: "js",
+        };
+
+        var dependencies = ["customActivity"];
+
+        require(config, dependencies);
+      })();
+    </script>
+  </head>
+  <body>
+    My First Custom Activity
+  </body>
+</html>
