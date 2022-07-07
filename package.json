@@ -1,0 +1,24 @@
+{
+  "name": "custom-activity-tutorial",
+  "version": "1.0.0",
+  "description": "This project will help you to create a Custom Acitivity by using Node JS as language.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solganeo-org/custom-activity-tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solganeo-org/custom-activity-tutorial/issues"
+  },
+  "homepage": "https://github.com/solganeo-org/custom-activity-tutorial#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  }
+}
