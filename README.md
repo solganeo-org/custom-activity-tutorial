@@ -26,6 +26,7 @@ Feel free to contact **solganeo technical** (it@solgnaneo.com) support if you ha
     - [Modify ./server/index.js](#modify-serverindexjs)
   - [Step 7: Run the application using ngrok](#step-7-run-the-application-using-ngrok)
   - [Step 8: Create Package on Salesforce Marketing Cloud](#step-8-create-package-on-salesforce-marketing-cloud)
+  - [Examples](#examples)
 
 ## Requirements
 
@@ -66,7 +67,9 @@ Now, if you are using a macOS, let’s understand the process of Node.js and NPM
 
 Ngrok est un outil qui permet de rendre votre poste de développement web local accessible depuis l'extérieur, via un tunnel sécurisé, depuis une url du type https://azerty.ngrok.io. Cette url est accessible par n'importe qui (vos clients, vos collègues...) et depuis n'importe où.
 
-Go to https://ngrok.com/download and Install it ! 😉 It will be useful to test the application locally in SFMC
+Go to https://ngrok.com/download and Install it ! 😉 It will be useful to test the application locally in SFMC.
+
+  It is important to note that the **free version** of ngrok randomly generates endpoints every time the `ngrok http 3000` command is executed. If you want to leave an endpoint fixed all the time, you can pay for a paid version to avoid repeating the steps: **7 and 8**
 
 ## Step 3: Start Node Project and Install dependencies
 
@@ -369,4 +372,16 @@ Copy the **https** endpoint for the following steps!
 This step is necessary to make the connection with Salesforce Marketing Cloud. Log in to your salesforce marketing cloud account, then go to setup, create a new package and add what you copied in the previous step as an endpoint. 
 
 Once this is done, you should be able to go to the journey builder and use the component! 🚀
+
+## Examples
+
+Finally, so far we have created a couple of examples of using custom activity that you can rely on:
+
+1. Logging Service: https://github.com/solganeo-org/sfmc.logging-service
+
+2. Webpush Activity: https://github.com/solganeo-org/webpush-solganeo 
+
+Contact the technical support team if you have more questions regarding the topic. 
+
+Have fun creating your own custom activity! 😁
 
